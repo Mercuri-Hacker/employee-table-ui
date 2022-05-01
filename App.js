@@ -13,8 +13,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='MyContacts'>
-        <Stack.Screen name='MyContacts' component={MyContacts} />
-        <Stack.Screen name='CreateContact' component={CreateContact} />
+        <Stack.Screen name='EmployeeList' component={MyContacts} options={{headerShown: false}} />
+        <Stack.Screen name='CreateContact' component={CreateContact} options={{headerShown: false}}/>
         <Stack.Screen name='Profile' component={Profile}
           options={{
             headerShown: false,
